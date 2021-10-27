@@ -1,0 +1,10 @@
+<div style="text-align: center; padding-top: 15%; width: 100%;">
+    <div *ngIf="error">Invalid Creds</div>
+    <div><label class="label">Email</label></div>
+    <div><input type="text" [(ngModel)]="userName" class="input"></div>
+    <br>
+    <div><label class="label">Password</label></div>
+    <div><input type="text" [(ngModel)]="password" class="input"></div>
+    <br><br>
+    <div><button class="button" (click)="validateLogin()">Submit</button></div>
+</div>

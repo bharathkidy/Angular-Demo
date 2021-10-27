@@ -1,0 +1,15 @@
+<ng-container *ngIf="!user; then login; else loggeedIn">
+</ng-container>
+<ng-template #loggeedIn>
+   <ng-container *ngIf="user.role==='ADMIN'; then admin; else employee">
+   </ng-container>
+</ng-template>
+<ng-template #admin>
+  <app-admin-component></app-admin-component>
+</ng-template>
+<ng-template #employee>
+  <app-profile-component [user]=user></app-profile-component>
+</ng-template>
+<ng-template #login>
+  <app-login-component (actionTypeEventEmitter)="updateUserInfo($event)"></app-login-component>
+</ng-template>

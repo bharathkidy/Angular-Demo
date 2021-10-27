@@ -1,0 +1,26 @@
+.full-width {
+    width: 100%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.column-label {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15%;
+}
+
+.column-center {
+    text-align: "center";
+}
+
+.column-header {
+    font-size: 30px;
+    font-weight: bold;
+}

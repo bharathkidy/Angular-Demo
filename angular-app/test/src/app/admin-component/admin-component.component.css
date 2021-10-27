@@ -1,0 +1,17 @@
+.label-header {
+    color: white;
+    width: 20%;
+    font-size: 20px;
+}
+
+.table-header {
+    background-color: rgb(167,201,66);
+}
+
+.even-row-color {
+    background-color: rgb(23,242,211);
+}
+
+.white {
+    background-color: white;
+}

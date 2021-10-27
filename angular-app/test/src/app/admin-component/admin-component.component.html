@@ -1,0 +1,32 @@
+<div *ngIf="error">error</div>
+<div style="padding-top: 5%" *ngIf = "!error">
+    <div><label style="padding-left: 5%; font-size: 30px;">User Details</label></div>
+    <br><br><br>
+    <div>
+        <table bgcolor=#98BF21 cellspacing=2 style="width: 100%;">
+            <tr class="table-header" style="height: 40px">
+                <th style="width:20%">
+                    <label style="color: white; font-size: 20px;">Name</label>
+                </th>
+                <th style="width:55%">
+                    <label style="color: white; font-size: 20px;">Email</label>
+                </th>
+                <th style="width:20%">
+                    <label style="color: white; font-size: 20px;">Role</label>
+                </th>
+            </tr>
+            <tr *ngFor="let user of users; let i = index" style="width:100%; height:40px;"
+                [ngClass]="{'even-row-color': i%2==1, 'white': i%2 == 0}">
+                <td style="width:20%">
+                    <div>{{user.name}}</div>
+                </td>
+                <td style="width:55%">
+                    <div>{{user.email}}</div>
+                </td>
+                <td style="width:25%">
+                    <div>{{user.role}}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
